@@ -172,8 +172,8 @@ def joint_probability(people, one_gene, two_genes, have_trait):
         mutated_genes = 1 if person in one_gene else 2 if person in two_genes else 0
         
         # Retrieve parents' information
-        father = people[person]["mother"]
-        mother = people[person]["father"]
+        father = people[person]["father"]
+        mother = people[person]["mother"]
 
         # Person has no parents listed in the data set
         if not (father or mother):
